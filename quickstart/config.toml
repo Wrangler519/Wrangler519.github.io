@@ -1,0 +1,4 @@
+baseURL = 'https://wrangler519.github.io./'
+languageCode = 'en-us'
+title = 'Wrangler'
+theme = 'ananke'
