@@ -1,2 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wrangler</title><link>https://Wrangler519.github.io./</link><description>Recent content on Wrangler</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Dec 2022 15:57:04 -0500</lastBuildDate><atom:link href="https://Wrangler519.github.io./index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://Wrangler519.github.io./posts/my-first-post/</link><pubDate>Thu, 22 Dec 2022 15:57:04 -0500</pubDate><guid>https://Wrangler519.github.io./posts/my-first-post/</guid><description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wrangler</title><link>https://Wrangler519.github.io./</link><description>Recent content on Wrangler</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Dec 2022 15:57:04 -0500</lastBuildDate><atom:link href="https://Wrangler519.github.io./index.xml" rel="self" type="application/rss+xml"/><item><title>Wrangler</title><link>https://Wrangler519.github.io./posts/wrangler/</link><pubDate>Thu, 22 Dec 2022 15:57:04 -0500</pubDate><guid>https://Wrangler519.github.io./posts/wrangler/</guid><description>ESE519-FinalProj “Wrangler” Demonstration The Completed Wrangler:
+Gif in action:
+&amp;mdash;Joystick Mode:
+Use the joystick located on the left hand side of the horse to control the direction of the Wrangler.
+&amp;mdash;Sound Mode:
+Make any sound would drive the Wrangler forward, at the same time, wave the whip and hit the horse once.
+![g2] (https://github.com/Thea-E/ESE519-FinalProj/blob/main/Wrangler_sound_mode.gif)
+How we made it System diagram:
+Components list:
+Component Name Quantity car chassis 1 servo motor 1 DC motor 2 motor driver 1 joystick 1 sound sensor 1 distance/motion sensor 1 voltage switch 1 From Proposal to Demo This is our proposed model, cute and interesting.</description></item></channel></rss>
