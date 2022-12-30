@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>About PIO - Wrangler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://wrangler519.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.6719d72e323121369d5caeb4264b95d8a63cf1deaab029da67602fe5a046e0a4.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://wrangler519.github.io/"><img alt="Logo" src="/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://wrangler519.github.io/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://wrangler519.github.io/docs/how/">How we made it</a>
+    </li>
+    
+    <li class="">
+      <a href="https://wrangler519.github.io/docs/troubles/">Troubles we met</a>
+    </li>
+    
+    <li class="">
+      <a href="https://wrangler519.github.io/docs/learned/">What we learned</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://wrangler519.github.io/docs/specimen/">About PIO</a>
+    </li>
+    
+    <li class="">
+      <a href="https://wrangler519.github.io/docs/example/">Our Team</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">About PIO</h1>
+<div class="content ">
+  <p>PIO was used for the LED(mode indicator) and to drive the APDS9960 distance/motion sensor.</p>
+<p>The general steps we programmed the PIO state machine are:</p>
+<ol>
+<li>
+<p>Determine which PIO instance to use(out of 2) PIO pio = pio0; PIO pio = pio1;</p>
+</li>
+<li>
+<p>Assign instructions into instruction memory with sufficient space uint offset = pio_add_program(pio, &amp;program_name_here)</p>
+</li>
+<li>
+<p>Find an available state machine uint sm = pio_claim_unused_sm(pio, true); some_kind_of_program_init(pio, sm, offset, PICO_DEFAULT_LED_PIN);</p>
+</li>
+<li>
+<p>Up to this point, state machine is ready and running.</p>
+</li>
+</ol>
+<p><strong>PIO&rsquo;s advantages:</strong></p>
+<ol>
+<li>
+<p>With pio, we can effectively implement any protocol at our need for the I/O communication. It&rsquo;s far more powerful and convenient over bit-banging. If using bit-banging, it will continuously consumes the memory and kernel of the PC, while the computer has other tasks to do.  For slower protocols you might be able to use an IRQ to wake up the processor from what it was doing fast enough (though latency here is a concern) to send the next bit(s). But PC-class processors keep many hundreds of instructions in-flight on a single core at once, which has drawbacks when trying to switch rapidly between hard real time tasks.</p>
+</li>
+<li>
+<p>PIO has it&rsquo;s strict timestamps, each instruction takes exactly one cycle, so it make it easier for the timing when programming and gives more control to the programmer.</p>
+</li>
+<li>
+<p>PIO states machine runs independently from the main processor, it saves memory, efficiency and pins.</p>
+</li>
+</ol>
+<p>These features make PIO a unique asset for a microcontroller.</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.302a6fc365d5139fb98cf60bdb8f715d96257ea189161d36c190ccfa8182e569.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
